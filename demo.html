@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      .nav-item {
+        display: inline-block;
+        margin: 1% 3%;
+      }
+      .header-body {
+        grid-area: header;
+        margin-left: 0;
+        background-color: #e8a0bf;
+      }
+      .main-body {
+        grid-area: main;
+        padding: 10px 50px 20px;
+        line-height: 1.5;
+      }
+      .rsidebar-body {
+        grid-area: rsidebar;
+        padding-right: 50px;
+        background-color: #c689c6;
+      }
+      .footer-body {
+        grid-area: footer;
+        padding-left: 2%;
+        background-color: white;
+      }
+      .header-bar {
+        grid-area: header-bar;
+      }
+      .article-container {
+        display: grid;
+        gap: 7px;
+        grid-template-areas:
+          "header-bar header-bar header-bar header-bar header-bar header-bar"
+          " header header header header header header"
+          "main main main main rsidebar rsidebar"
+          "footer footer footer footer footer footer";
+        background-color: #fcc5c0;
+      }
+      .search-bar {
+        margin-left: 25%;
+      }
+      .btn {
+        color: white;
+        background-color: #1b2430;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-container">
+      <div class="header-bar">
+        <h1>Header</h1>
+      </div>
+      <div class="header-body">
+        <h2 class="nav-item">HOME</h2>
+        <h2 class="nav-item">OUR TEAM</h2>
+        <h2 class="nav-item">PROJECTS</h2>
+        <h2 class="nav-item">CONTACT</h2>
+
+        <input class="search-bar" type="text" placeholder="Search Query" />
+        <input class="btn" type="button" value="Get" />
+      </div>
+      <div class="main-body">
+        <h1>Article Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <h2>subsection</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <h2>Another subsection</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+      </div>
+      <div class="rsidebar-body">
+        <h1>Related</h1>
+        <ul>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+        </ul>
+      </div>
+      <div class="footer-body">
+        <p>Copyright</p>
+      </div>
+    </div>
+  </body>
+</html>
